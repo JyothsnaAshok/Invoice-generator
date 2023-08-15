@@ -1,0 +1,203 @@
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(244, 244, 244, 1);
+  color: rgba(31, 31, 31, 0.8);
+  overflow-y: hidden;
+
+  .navbar {
+    background: #fff;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    color: #000;
+    font-size: 2rem;
+
+    .buttonPrimary {
+      background: #fff;
+      border-radius: 8px;
+      color: #000;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      padding: 0 16px;
+      transition: all 0.2s ease-in-out;
+      border: 1px solid rgba(31, 31, 31, 1);
+      margin: 0 1rem;
+
+      &:hover {
+        color: #000;
+        border-color: #000;
+        transform: scale(1.05);
+      }
+    }
+
+    .buttonSecondary {
+      color: #fff;
+      border-radius: 8px;
+      background: #000;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      padding: 0px 25px;
+      transition: all 0.2s ease-in-out;
+      border: 1px solid rgba(31, 31, 31, 1);
+
+      &:hover {
+        color: #fff;
+        border: 1px solid rgba(31, 31, 31, 1);
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    .contentLeft {
+      padding-left: 2rem;
+      padding-top: 2rem;
+
+      height: 100vh;
+      border-right: 3px solid rgba(31, 31, 31, 0.7);
+      overflow-y: scroll;
+
+      span {
+        font-size: 0.8rem;
+      }
+
+      .form {
+        background-color: #fff;
+        border-radius: 12px;
+        margin-top: 0.8rem;
+        padding: 2rem;
+        margin-bottom: 10rem;
+        border: 1px solid rgba(237, 237, 237, 1);
+        box-shadow: 0px 8px 18px 0px rgba(207, 207, 207, 0.1);
+
+        box-shadow: 0px 33px 33px 0px rgba(207, 207, 207, 0.09);
+
+        box-shadow: 0px 74px 44px 0px rgba(207, 207, 207, 0.05);
+
+        box-shadow: 0px 132px 53px 0px rgba(207, 207, 207, 0.01);
+
+        :global {
+          .ant-input {
+            border: 1px solid rgba(31, 31, 31, 0.4) !important;
+            border-radius: 2px;
+          }
+        }
+      }
+
+      .staticContent {
+        background-color: rgba(31, 31, 31, 0.05) !important;
+        width: 20rem;
+        padding: 1rem;
+      }
+
+      .buttonSecondary {
+        color: #fff;
+        border-radius: 8px;
+        background: #000;
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+        padding: 0px 25px;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid rgba(31, 31, 31, 1);
+
+        &:hover {
+          color: #fff;
+          border: 1px solid rgba(31, 31, 31, 1);
+        }
+      }
+    }
+    .contentRight {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .invoice {
+        background-color: #fff;
+        width: 90%;
+        padding: 2rem;
+        height: 40rem;
+        font-size: 12px;
+
+        :global {
+          .ant-table {
+            font-size: 0.6rem;
+          }
+        }
+
+        .invoiceFromHeader {
+          font-weight: 600;
+        }
+
+        .notes {
+          h6 {
+            font-size: 0.7rem !important;
+          }
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          padding: 1rem;
+          text-align: left;
+          width: 250px;
+          height: 120px;
+          font-size: 0.6rem;
+          overflow-wrap: break-word;
+          margin-right: 2rem;
+        }
+
+        .invoiceTotal {
+          display: flex;
+          flex-direction: column;
+          width: 150px;
+
+          .invoiceTotalItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.rowSpace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
