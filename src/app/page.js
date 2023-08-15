@@ -96,7 +96,7 @@ export default function Home() {
   const [dueDate, setDueDate] = useState("");
   const [items, setItems] = useState([
     {
-      name: "test",
+      name: "",
       qty: 0,
       price: "",
     },
